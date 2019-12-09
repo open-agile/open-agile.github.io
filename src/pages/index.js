@@ -14,6 +14,8 @@ const IndexPage = () => {
         createData('Retrospective Starter Kit', 'https://kenji-getpowered.github.io/retrospective-starter-kit/', 'Retro', 'Tous', 'Tous', 'fr', 'http://www.filedropper.com/scrum-retrospective-starter-kit'),
         createData('Code-moi un mouton', 'https://github.com/zenika-open-source/code-moi-un-mouton', 'School', 'Tous', 'Tous', 'fr', 'https://github.com/zenika-open-source/code-moi-un-mouton/tree/master/kit-de-demarrage'),
         createData('Elephant Carpaccio', 'https://github.com/jlandure/techio-carpaccio-programming/blob/master/intro.md', 'Kata', 'Tous', 'Tous', 'fr', 'https://github.com/jlandure/techio-carpaccio-programming/blob/master/product.md'),
+        createData('Gilded Rose Kata', 'https://github.com/emilybache/GildedRose-Refactoring-Kata', 'Kata', 'Tous', 'Tous', 'en,fr', 'https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/master/GildedRoseRequirements_fr.md'),
+        createData('Theatrical Players Refactoring Kata', 'https://github.com/emilybache/Theatrical-Players-Refactoring-Kata', 'Kata', 'Tous', 'Tous', 'en', 'https://github.com/emilybache/Theatrical-Players-Refactoring-Kata/blob/master/README.md'),
         createData('Agile Game of Thrones', 'https://github.com/open-agile/agile-game-of-thrones', 'Priorisation', '1h30', '2-30', 'fr', 'https://github.com/open-agile/agile-game-of-thrones/tree/master/long_version_got'),
         createData('Lego Carpaccio', 'https://github.com/open-agile/lego-carpaccio', 'Iteration,Feedback,Lego', '1h30 mn', '2-30', 'fr', 'https://github.com/open-agile/lego-carpaccio'),
         createData('RetroThemez', 'https://github.com/cs91/RetroThemez', 'Retro', 'Tous', 'Tous', 'en', 'https://github.com/cs91/RetroThemez'),

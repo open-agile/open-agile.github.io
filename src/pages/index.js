@@ -83,12 +83,12 @@ const IndexPage = () => {
         <div className={"call-to-action"}>
             <div className={"container"}>
                 <div className={"call-to-action__content"}>
-                    <h2>Sign up for free</h2>
-                    <p>Sign up and start increasing the productivity of your business with HiStaff.</p>
+                    <h2>Votre atelier n'est pas listé&nbsp;?</h2>
+                    <p>Rien de plus simple&nbsp;! Il suffit de le proposer.</p>
                 </div>
 
                 <div className={"button"}>
-                    <a href="https://app.histaff.io" target={"_blank"}>Get Started</a>
+                    <a href="https://github.com/open-agile/open-agile.github.io/pulls" target={"_blank"}>Je rajoute mon atelier ici&nbsp;!</a>
                 </div>
             </div>
         </div>

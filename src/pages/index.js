@@ -2,26 +2,9 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { makeStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
-
+import TableResults from "../components/table-results"
 
 const IndexPage = () => {
-    const useStyles = makeStyles({
-        root: {
-          width: '100%',
-          overflowX: 'auto',
-        },
-        table: {
-          minWidth: 650,
-        },
-      });
-      
       function createData(name, link, tags, duration, people, language, kit) {
         return { name, link, tags, duration, people, language, kit };
       }
@@ -34,9 +17,6 @@ const IndexPage = () => {
         createData('RetroThemez', 'https://github.com/cs91/RetroThemez', 'Retro', 'Tous', 'Tous', 'en', 'https://github.com/cs91/RetroThemez'),
         createData('Rétrospectives Scénarisées', 'https://github.com/chapuyj/scripted-retrospective', 'Retro', 'Tous', 'Tous', 'fr', 'https://github.com/chapuyj/scripted-retrospective/blob/master/scripts/kaamelott_un-sejour-a-kaamelott_20191026.md'),
       ];
-    
-      const classes = useStyles();
-
 
     return (<Layout>
         <SEO title="Que recherchez-vous ?"/>
@@ -46,36 +26,7 @@ const IndexPage = () => {
             <p>Voici la liste actuelle :</p>
             <div className={"container"}>
                 <div className={"features"}>
-                    <Paper className={classes.root}>
-                        <Table className={classes.table} aria-label="simple table">
-                            <TableHead>
-                            <TableRow>
-                                <TableCell>Nom</TableCell>
-                                <TableCell align="right">Lien GitHub</TableCell>
-                                <TableCell align="right">Catégories</TableCell>
-                                <TableCell align="right">Durée</TableCell>
-                                <TableCell align="right">Participants</TableCell>
-                                <TableCell align="right">Langue</TableCell>
-                                <TableCell align="right">Kit à télécharger</TableCell>
-                            </TableRow>
-                            </TableHead>
-                            <TableBody>
-                            {rows.map(row => (
-                                <TableRow key={row.name}>
-                                <TableCell component="th" scope="row">
-                                    {row.name}
-                                </TableCell>
-                                <TableCell align="right">{row.link}</TableCell>
-                                <TableCell align="right">{row.tags}</TableCell>
-                                <TableCell align="right">{row.duration}</TableCell>
-                                <TableCell align="right">{row.people}</TableCell>
-                                <TableCell align="right">{row.language}</TableCell>
-                                <TableCell align="right"><a href={row.kit} title={row.kit}>Lien</a></TableCell>
-                                </TableRow>
-                            ))}
-                            </TableBody>
-                        </Table>
-                    </Paper>
+                    <TableResults results={rows}/>
                 </div>
             </div>
         </div>

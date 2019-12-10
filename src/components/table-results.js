@@ -107,7 +107,6 @@ const TableResults = ({results}) => {
               <TableHead>
                   <TableRow>
                       <TableCell>Nom</TableCell>
-                      <TableCell align="right">Lien GitHub</TableCell>
                       <TableCell align="right">Catégories</TableCell>
                       <TableCell align="right">Durée</TableCell>
                       <TableCell align="right">Participants</TableCell>
@@ -122,9 +121,8 @@ const TableResults = ({results}) => {
               ).map(row => (
                   <TableRow key={row.name}>
                       <TableCell component="th" scope="row">
-                          {row.name}
+                          <a href={row.link} title={row.name}>{row.name}</a>
                       </TableCell>
-                      <TableCell align="right"><a href={row.link} title={row.link}>Homepage</a></TableCell>
                       <TableCell align="right">{row.tags}</TableCell>
                       <TableCell align="right">{row.duration}</TableCell>
                       <TableCell align="right">{row.people}</TableCell>

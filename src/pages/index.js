@@ -9,8 +9,8 @@ const IndexPage = () => {
           return { name, link, tags, duration, people, language, kit };
       }
       
-      const rows = [
-        createData('caTesTdrale', 'https://catestdrale.github.io/', 'Testing', '30 mn', '2-99', 'fr', 'https://catestdrale.github.io/chateauCarte.pdf'),
+      const results = [
+        createData('caTesTdrale', 'https://catestdrale.github.io/', 'Testing', '30mn', '2-99', 'fr', 'https://catestdrale.github.io/chateauCarte.pdf'),
         createData('Retrospective Starter Kit', 'https://kenji-getpowered.github.io/retrospective-starter-kit/', 'Retro', 'Tous', 'Tous', 'fr', 'http://www.filedropper.com/scrum-retrospective-starter-kit'),
         createData('Code-moi un mouton', 'https://github.com/zenika-open-source/code-moi-un-mouton', 'School', 'Tous', 'Tous', 'fr', 'https://github.com/zenika-open-source/code-moi-un-mouton/tree/master/kit-de-demarrage'),
         createData('Elephant Carpaccio', 'https://github.com/jlandure/techio-carpaccio-programming/blob/master/intro.md', 'Kata', 'Tous', 'Tous', 'fr', 'https://github.com/jlandure/techio-carpaccio-programming/blob/master/product.md'),
@@ -38,7 +38,7 @@ const IndexPage = () => {
             <p>Voici la liste actuelle :</p>
             <div className={"container"}>
                 <div className={"features"}>
-                    <TableResults results={rows}/>
+                    <TableResults results={results}/>
                 </div>
             </div>
         </div>
